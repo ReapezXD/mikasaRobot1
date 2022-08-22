@@ -414,7 +414,7 @@ Antiflood allows you to take action on users that send more than x messages in a
  1w = 1 week
 """
 
-__mod_name__ = "Anti-Flood"
+__mod_name__ = "Aɴᴛɪ-ғʟᴏᴏᴅ 🛑"
 
 FLOOD_BAN_HANDLER = MessageHandler(
     Filters.all & ~Filters.status_update & Filters.chat_type.groups,
