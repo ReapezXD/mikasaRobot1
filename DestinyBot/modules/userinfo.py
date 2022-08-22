@@ -314,7 +314,7 @@ def info(update: Update, context: CallbackContext):
         disaster_level_present = True
 
     if disaster_level_present:
-        text += ' [<a href="https://t.me/unmei_updates/4"> 𝒾 </a>]'.format(
+        text += ' [<a href="https://t.me/kakashi_bots_support/246"> 𝒾 </a>]'.format(
             bot.username,
         )
 
@@ -351,9 +351,9 @@ def info(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                "Health", url="https://t.me/unmei_updates/5"),
+                                "Health", url="https://t.me/kakashi_bots_support/1056"),
                             InlineKeyboardButton(
-                                "Disaster", url="https://t.me/unmei_updates/4")
+                                "Disaster", url="https://t.me/kakashi_bots_support/246")
                         ],
                     ]
                 ),
