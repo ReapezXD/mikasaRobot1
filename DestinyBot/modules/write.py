@@ -27,7 +27,7 @@ async def writer(e):
     os.remove(file)
 
 
-__mod_name__ = "Write"
+__mod_name__ = "Wʀɪᴛᴇ ✍️"
 
 __help__ = """
 *Write Text*
