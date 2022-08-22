@@ -87,7 +87,7 @@ PM_START_TEXT = """
 ───『 {} 』───
 Hey there *✮ {} ✮*,
 
-*Watashi No Namae Wa* "`Destiny (運命)`"*, A Musicart named after Beethoven's Symphony No*[.](https://telegra.ph/file/3cfeb559dc1ec093d21d8.mp4)*5 in C Minor Op.67*
+*Watashi No Namae Wa* "`Destiny (運命)`"*, ɪ'ᴍ ғʀᴏᴍ ᴀᴛᴛᴀᴄᴋ ᴏɴ ᴛɪᴛᴀɴ*[.](https://telegra.ph/file/4c56f745cb3d5765a4aaf.mp4)*ɪ ᴀᴍ ʜᴇʀᴇ ᴛᴏ ᴘʀᴏᴛᴇᴄᴛ ʏᴏu ᴍʏ ᴇʀᴇʜʜ!*
 
 ➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳
 ღღ   *Uptime*: 『 `{}` 』   ღღ
@@ -101,11 +101,11 @@ Hey there *✮ {} ✮*,
 
 GROUP_START_MSG = "👋 Hi {}\nI won't sleep yet, because I believe someone is waiting for my Music.\n\nUptime - {}"
 
-START_IMG = "https://telegra.ph/file/3cfeb559dc1ec093d21d8.mp4"
+START_IMG = "https://telegra.ph/file/d9f59e9ca081618425610.mp4"
 
 HELP_STRINGS = """
-Hello there, I'm Unmei (Destiny), A powerful group management bot.
-To make me functional, make sure that I have enough rights in your group[.](https://telegra.ph/file/26c430892d2ce0e407443.jpg)
+Hello there, I'm Mɪᴋᴀsᴀ Aᴄᴋᴇʀᴍᴀɴ ♡ 振, A powerful group management bot.
+To make me functional, make sure that I have enough rights in your group[.](https://telegra.ph/file/6ef4c5312216d277f698a.jpg)
 Helpful commands:
 
 - /start: It will start me by showing you some options! You've probably used this, as you are here now. Hehe
@@ -117,25 +117,25 @@ List of all the Modules:
     dispatcher.bot.first_name, "" if not ALLOW_EXCL else "📝All commands can either be used with / or !.")
 buttons = [
     [
-        InlineKeyboardButton(text="『 ➕ Add Me to your Group! Onegaii! 』",url="https://telegram.dog/Destiny_x_Bot?startgroup=true")
+        InlineKeyboardButton(text="『 ➕ Aᴅᴅ ᴍᴇ ᴇʟsᴇ ʏᴏᴜ ɢᴀʏ ʟɪᴋᴇ ʏᴍɪʀ! Onegaii! 』",url="https://telegram.dog/Destiny_x_Bot?startgroup=true")
     ],
     [
-        InlineKeyboardButton(text="『 🙇 Help 』", callback_data="help_back"),
-        InlineKeyboardButton(text="『 ❔ Otaku Talks 』", url="https://t.me/tas_support")
+        InlineKeyboardButton(text="『 🙇 ʜᴇʟᴘ 』", callback_data="help_back"),
+        InlineKeyboardButton(text="『 ᴍʏ ᴇʀᴇʜ! 』", url="https://t.me/SIXTH_H0KAGE")
     ],
     [
-        InlineKeyboardButton(text="『 🚑 Support 』",url="https://telegram.dog/unmei_support"),
-        InlineKeyboardButton(text="『 📢 Updates 』",url="https://t.me/unmei_updates")
+        InlineKeyboardButton(text="『 🚑 sᴜᴘᴘᴏʀᴛ 』",url="https://telegram.dog/kakashi_bots_updates"),
+        InlineKeyboardButton(text="『 📢 ᴜᴘᴅᴀᴛᴇs 』",url="https://t.me/kakashi_bots_support")
     ]
 ]
 
 grp_buttons = [
     [
-        InlineKeyboardButton(text="『 🚑 Support 』", url="https://telegram.dog/unmei_support"),
-        InlineKeyboardButton(text="『 🙇 Help 』", url="http://t.me/Destiny_x_Bot?start=help")
+        InlineKeyboardButton(text="『 🚑 sᴜᴘᴘᴏʀᴛ 』", url="https://telegram.dog/kakashi_bots_support"),
+        InlineKeyboardButton(text="『 🙇 ʜᴇʟᴘ 』", url="http://t.me/Destiny_x_Bot?start=help")
     ],
     [
-        InlineKeyboardButton(text="『 🎧 Add Music Bot here 』", url="https://telegram.dog/DestinyMusic_bot?startgroup=true")
+        InlineKeyboardButton(text="『 🎧 Add Music Bot here 』", url="https://t.me/kakashi_bots_support/2591?startgroup=true")
     ]
 ]
 
