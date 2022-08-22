@@ -448,8 +448,8 @@ def stats(update, context):
             status
             + "\n*Bot statistics*:\n"
             + "\n".join([mod.__stats__() for mod in STATS])
-            + f"\n\n[➲ Support](https://t.me/{SUPPORT_CHAT}) | [➲ Updates](https://t.me/unmei_updates)\n\n"
-            + "╘══ 『 by [𝚂𝙷𝙾𝚃𝙾](https://t.me/yameteee_yamete_kudasai) 』\n",
+            + f"\n\n[➲ Support](https://t.me/{SUPPORT_CHAT}) | [➲ Updates](https://t.me/kakashi_bots_updates)\n\n"
+            + "╘══ 『 by [𝓚𝒶кคѕⒽᎥ ђ𝔞𝓉ᗩЌ𝒆](https://t.me/SIXTH_H0KAGE) 』\n",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
         )
@@ -461,9 +461,9 @@ def stats(update, context):
                         "\n*Bot statistics*:\n"
                         + "\n".join(mod.__stats__() for mod in STATS)
                     )
-                    + f"\n\n➥ [Support](https://t.me/{SUPPORT_CHAT}) | ➲ [Updates](https://t.me/unmei_updates)\n\n"
+                    + f"\n\n➥ [Support](https://t.me/{SUPPORT_CHAT}) | ➲ [Updates](https://t.me/kakashi_bots_updates)\n\n"
                 )
-                + "╘══『 by [𝚂𝙷𝙾𝚃𝙾](https://t.me/yameteee_yamete_kudasai) 』\n"
+                + "╘══『 by [𝓚𝒶кคѕⒽᎥ ђ𝔞𝓉ᗩЌ𝒆](https://t.me/SIXTH_H0KAGE) 』\n"
             ),
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
