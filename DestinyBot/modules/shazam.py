@@ -57,7 +57,7 @@ async def shazamcmd(event):
     await unmei_event.delete()
 
 
-__mod_name__ = "Shazam"
+__mod_name__ = "Sʜᴀᴢᴀᴍ ⚡"
 
 __help__ = """
 *Shazam*
