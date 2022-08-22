@@ -394,15 +394,15 @@ def unmei_about_callback(update, context):
     query = update.callback_query
     if query.data == "unmei_":
         query.message.edit_text(
-            text="๏ I'm *Unmei (Destiny)*, a powerful group management bot built to help you manage your group easily."
+            text="๏ I'm *Mɪᴋᴀsᴀ Aᴄᴋᴇʀᴍᴀɴ ♡ 振*, a powerful group management bot built to help you manage your group easily."
             "\n• I can restrict users."
             "\n• I can greet users with customizable welcome messages and even set a group's rules."
             "\n• I have an advanced anti-flood system."
             "\n• I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc."
             "\n• I have a note keeping system, blacklists, and even predetermined replies on certain keywords."
             "\n• I check for admins' permissions before executing any command and more stuffs"
-            "\n\n_Unmei's licensed under the GNU General Public License v3.0_"
-            "\n\n Click on button bellow to get basic help for Unmei Bot.",
+            "\n\n_mikasa's licensed under the GNU General Public License v3.0_"
+            "\n\n Click on button bellow to get basic help for Mɪᴋᴀsᴀ Aᴄᴋᴇʀᴍᴀɴ ♡ 振.",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -416,7 +416,7 @@ def unmei_about_callback(update, context):
                     InlineKeyboardButton(text="Credits", callback_data="unmei_credit"),
                  ],
                  [
-                    InlineKeyboardButton(text="Source Code", url="https://github.com/DarkSoulxUltra/DestinyBot"),
+                    InlineKeyboardButton(text="Source Code", url="https://telegra.ph/file/9b0455dae14d5639f936d.mp4"),
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="unmei_back"),
@@ -443,7 +443,7 @@ def unmei_about_callback(update, context):
     elif query.data == "unmei_admin":
         query.message.edit_text(
             text=f"*๏ Let's make your group bit effective now*"
-            "\nCongragulations, Unmei (Destiny) is now ready to manage your group."
+            "\nCongragulations, Mɪᴋᴀsᴀ Aᴄᴋᴇʀᴍᴀɴ ♡ 振 is now ready to manage your group."
             "\n\n*Admin Tools*"
             "\nBasic Admin tools help you to protect and powerup your group."
             "\nYou can ban members, Kick members, Promote someone as admin through commands of bot."
@@ -470,14 +470,14 @@ def unmei_about_callback(update, context):
         )
     elif query.data == "unmei_support":
         query.message.edit_text(
-            text="**๏ Unmei Support Chats**"
-            "\nJoin My Support Group/Channel for see or report a problem on Unmei.",
+            text="**๏ @kakashi_bots_support**"
+            "\nJoin My Support Group/Channel for see or report a problem on mikasa.",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Support", url="t.me/unmei_support"),
-                    InlineKeyboardButton(text="Updates", url="https://t.me/unmei_updates"),
+                    InlineKeyboardButton(text="Support", url="t.me/kakashi_bots_support"),
+                    InlineKeyboardButton(text="Updates", url="https://t.me/kakashi_bots_updates"),
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="unmei_"),
@@ -490,17 +490,17 @@ def unmei_about_callback(update, context):
 
     elif query.data == "unmei_credit":
         query.message.edit_text(
-            text=f"๏ Credis for Unmei\n"
+            text=f"๏ Credis for Mɪᴋᴀsᴀ Aᴄᴋᴇʀᴍᴀɴ ♡ 振\n"
             "\nHere Developers Making And Give Inspiration For making the repo",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
 		 [
-                    InlineKeyboardButton(text="Shoto", url="https://github.com/DarkSoulxUltra"),
+                    InlineKeyboardButton(text="𝓚𝒶кคѕⒽᎥ ђ𝔞𝓉ᗩЌ𝒆 ", url="https://github.com/ssid143"),
                  ],
                  [
-                    InlineKeyboardButton(text="sena-ex", url="https://github.com/kennedy-ex"),
-                    InlineKeyboardButton(text="TheHamkerCat", url="https://github.com/TheHamkerCat"),
+                    InlineKeyboardButton(text="𝓚𝒶кคѕⒽᎥ ђ𝔞𝓉ᗩЌ𝒆", url="https://t.me/SIXTH_H0KAGE"),
+                    InlineKeyboardButton(text="EREH!", url="https://t.me/black_ranger_69"),
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="unmei_"),
@@ -821,7 +821,7 @@ def main():
         try:
             dispatcher.bot.sendMessage(
                 f"@{SUPPORT_CHAT}", 
-                "👋 Hey there Symphonicas,\nI['](https://telegra.ph/file/6931b8ee3a04aef8af314.mp4)m awake again.",
+                "👋 Hey there Mɪᴋᴀsᴀ Aᴄᴋᴇʀᴍᴀɴ ♡ 振,\nI['](https://telegra.ph/file/b7170385226e0da05bef7.jpg)m awake again.",
                 parse_mode=ParseMode.MARKDOWN
             )
         except Unauthorized:
