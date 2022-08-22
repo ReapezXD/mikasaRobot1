@@ -687,7 +687,7 @@ Group admins/group owners do not need these commands.
        works by reply too
  ╠ ✮ `/ungban`*:* Ungbans the user, same usage as gban
  ╚ ✮ `/gbanlist`*:* Outputs a list of gbanned users
-Visit @unmei_support for more information.
+Visit @kakashi_bots_support for more information.
 """
 
 DEV_HANDLER = CommandHandler(("adddev", "addconductor"), adddev)
@@ -727,7 +727,7 @@ dispatcher.add_handler(SUPPORTLIST_HANDLER)
 dispatcher.add_handler(SUDOLIST_HANDLER)
 dispatcher.add_handler(DEVLIST_HANDLER)
 
-__mod_name__ = "Disasters"
+__mod_name__ = "Dɪsᴀsᴛᴇʀs 😈"
 
 __handlers__ = [
     DEV_HANDLER, SUDO_HANDLER, SUPPORT_HANDLER, TIGER_HANDLER, WHITELIST_HANDLER,
