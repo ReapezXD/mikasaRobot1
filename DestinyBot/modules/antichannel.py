@@ -113,7 +113,7 @@ __handlers__ = [
     LIST_ANTICHANNEL_CHATS_HANDLER,
 ]
 
-__mod_name__ = "Anti-Channel"
+__mod_name__ = "Aɴᴛɪ - Cʜᴀɴɴᴇʟ 🚫"
 '''
 __help__ = """
 *Anti-Channel:*
