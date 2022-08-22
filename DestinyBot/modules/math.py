@@ -97,7 +97,7 @@ def log(update: Update, context: CallbackContext):
     message.reply_text(math.log(int(args[0])))
 
 
-__mod_name__ = "Math"
+__mod_name__ = "Mᴀᴛʜ 🧮"
 
 __help__ = """
 Solves complex math problems using https://newton.now.sh
