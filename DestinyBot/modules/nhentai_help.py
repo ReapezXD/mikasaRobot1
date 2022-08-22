@@ -1,4 +1,4 @@
-__mod_name__ = "Nhentai"
+__mod_name__ = "Nhentai 📙"
 
 __help__ = """
 *Nhentai / Doujins*
