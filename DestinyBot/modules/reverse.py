@@ -92,7 +92,7 @@ def reverse(update: Update, context:CallbackContext):
         fetchUrl = response.headers['Location']
 
         if response != 400:
-            xx = bot.send_message(chat_id, "Image was successfully uploaded to Google."
+            xx = bot.send_message(chat_id, "Le bc kar le protecc yehi to bacha h ab jindgi me."
                                   "\nParsing it, please wait.", reply_to_message_id=rtmid)
         else:
             xx = bot.send_message(chat_id, "Google told me to go away.", reply_to_message_id=rtmid)
