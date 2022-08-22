@@ -87,7 +87,7 @@ PM_START_TEXT = """
 ───『 {} 』───
 Hey there *✮ {} ✮*,
 
-*Watashi No Namae Wa* "`Destiny (運命)`"*, ɪ'ᴍ ғʀᴏᴍ ᴀᴛᴛᴀᴄᴋ ᴏɴ ᴛɪᴛᴀɴ*[.](https://telegra.ph/file/4c56f745cb3d5765a4aaf.mp4)*ɪ ᴀᴍ ʜᴇʀᴇ ᴛᴏ ᴘʀᴏᴛᴇᴄᴛ ʏᴏu ᴍʏ ᴇʀᴇʜʜ!*
+*Watashi No Namae Wa* "`Mɪᴋᴀsᴀ Aᴄᴋᴇʀᴍᴀɴ ♡ 振`"*, ɪ'ᴍ ғʀᴏᴍ ᴀᴛᴛᴀᴄᴋ ᴏɴ ᴛɪᴛᴀɴ*[.](https://telegra.ph/file/4c56f745cb3d5765a4aaf.mp4)*ɪ ᴀᴍ ʜᴇʀᴇ ᴛᴏ ᴘʀᴏᴛᴇᴄᴛ ʏᴏu ᴍʏ ᴇʀᴇʜʜ!*
 
 ➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳
 ღღ   *Uptime*: 『 `{}` 』   ღღ
@@ -99,9 +99,9 @@ Hey there *✮ {} ✮*,
 ♡ Try The Help Button below To Know My Abilities, or simply do /help 🙂. ♡
 """
 
-GROUP_START_MSG = "👋 Hi {}\nI won't sleep yet, because I believe someone is waiting for my Music.\n\nUptime - {}"
+GROUP_START_MSG = "👋 Hi {}\nI won't sleep yet, because I have to satisfy my erehh!.\n\nUptime - {}"
 
-START_IMG = "https://telegra.ph/file/d9f59e9ca081618425610.mp4"
+START_IMG = "https://telegra.ph/file/27feeedc2c2b1ac7cdc32.jpg"
 
 HELP_STRINGS = """
 Hello there, I'm Mɪᴋᴀsᴀ Aᴄᴋᴇʀᴍᴀɴ ♡ 振, A powerful group management bot.
@@ -117,7 +117,7 @@ List of all the Modules:
     dispatcher.bot.first_name, "" if not ALLOW_EXCL else "📝All commands can either be used with / or !.")
 buttons = [
     [
-        InlineKeyboardButton(text="『 ➕ Aᴅᴅ ᴍᴇ ᴇʟsᴇ ʏᴏᴜ ɢᴀʏ ʟɪᴋᴇ ʏᴍɪʀ! Onegaii! 』",url="https://telegram.dog/Destiny_x_Bot?startgroup=true")
+        InlineKeyboardButton(text="『 ➕ Aᴅᴅ ᴍᴇ ᴇʟsᴇ ʏᴏᴜ ɢᴀʏ ʟɪᴋᴇ ʏᴍɪʀ! Onegaii! 』",url="https://telegram.dog/Mikasa_management_bot?startgroup=true")
     ],
     [
         InlineKeyboardButton(text="『 🙇 ʜᴇʟᴘ 』", callback_data="help_back"),
@@ -132,21 +132,21 @@ buttons = [
 grp_buttons = [
     [
         InlineKeyboardButton(text="『 🚑 sᴜᴘᴘᴏʀᴛ 』", url="https://telegram.dog/kakashi_bots_support"),
-        InlineKeyboardButton(text="『 🙇 ʜᴇʟᴘ 』", url="http://t.me/Destiny_x_Bot?start=help")
+        InlineKeyboardButton(text="『 🙇 ʜᴇʟᴘ 』", url="http://t.me/Mikasa_management_bot?start=help")
     ],
     [
         InlineKeyboardButton(text="『 🎧 Add Music Bot here 』", url="https://t.me/kakashi_bots_support/2591?startgroup=true")
     ]
 ]
 
-GROUP_START_IMG = "https://telegra.ph/file/2d9b9613c4c7f8310c6d1.mp4"
-DESTINY_IMG = "https://telegra.ph/file/a4f96c30605ece22664ea.jpg"
+GROUP_START_IMG = "https://telegra.ph/file/d9f59e9ca081618425610.mp4"
+DESTINY_IMG = "https://telegra.ph/file/3561b786051c93b6d89c7.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
-You can support the project by contacting [Shoto](t.me/yameteee_yamete_kudasai)
+You can support the project by contacting [𝓚𝒶кคѕⒽᎥ ђ𝔞𝓉ᗩЌ𝒆](t.me/SIXTH_H0KAGE)
 Supporting isn't always financial!
 Those who cannot provide monetary support are welcome to help us develop the bot at our
-[Support Group](t.me/unmei_support)."""
+[Support Group](t.me/kakashi_bots_support)."""
 
 IMPORTED = {}
 MIGRATEABLE = []
