@@ -1,4 +1,4 @@
-__mod_name__ = "Memes"
+__mod_name__ = "Mᴇᴍᴇ 🌚"
 
 __help__ = """
 *Random Memes*
