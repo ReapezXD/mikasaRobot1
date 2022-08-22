@@ -39,7 +39,7 @@ def kukirm(update: Update, context: CallbackContext) -> str:
             )
         else:
             update.effective_message.edit_text(
-                "Destiny AI disable by {}.".format(mention_html(user.id, user.first_name)),
+                "Mikasa's AI disable by {}.".format(mention_html(user.id, user.first_name)),
                 parse_mode=ParseMode.HTML,
             )
 
@@ -65,7 +65,7 @@ def kukiadd(update: Update, context: CallbackContext) -> str:
             )
         else:
             update.effective_message.edit_text(
-                "Destiny's AI enable by {}.".format(mention_html(user.id, user.first_name)),
+                "Mikasa's AI enable by {}.".format(mention_html(user.id, user.first_name)),
                 parse_mode=ParseMode.HTML,
             )
 
