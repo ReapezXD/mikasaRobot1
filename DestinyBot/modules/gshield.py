@@ -322,4 +322,4 @@ __help__ = """
  ✮ /profanity [on/off]*:* To restrict the use of some profanity/slang words.
 """
 
-__mod_name__ = "Shield"
+__mod_name__ = "Sʜᴇɪʟᴅ 🛡️"
