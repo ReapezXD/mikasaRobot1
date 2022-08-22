@@ -19,6 +19,38 @@ GIF_ID = [
     "CgACAgQAAx0CXiWt4wACjE9iEKrBCDgQng6sVbqmU-LxGkFbsQAC3AIAAiudtFIUgy45-_1c2iME"
 ]
 
+henbuttons = [
+    [
+                        InlineKeyboardButton(
+                             text="Uncensored Hentai",
+                             url="https://t.me/Uncensored_Hemtai"),
+                    ],                
+                   [ 
+                       InlineKeyboardButton(
+                             text="Pornhwa",
+                             url="https://t.me/PornhwaHeaven"),                  
+                       InlineKeyboardButton(
+                             text="Chat",
+                             url="https://t.me/Hentai_Chat_Hanime"),
+                   ],
+    ]
+
+anibuttons = [
+    [
+                        InlineKeyboardButton(
+                             text="Anime Cruise",
+                             url="https://t.me/Anime_Cruise"),
+                    ],                
+                   [ 
+                       InlineKeyboardButton(
+                             text="Index",
+                             url="https://t.me/Cruise_Index"),                  
+                       InlineKeyboardButton(
+                             text="Chat",
+                             url="https://t.me/Anime_Chat_Kaizuryu"),
+                   ],
+    ]
+
 BOT_FLIRTED = (
     "Ohh my, trying to hitting on me with my powers?",
     "If you try something on me, I'll feel weird.🥵",
