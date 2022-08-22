@@ -62,7 +62,7 @@ BUG_HANDLER = DisableAbleCommandHandler("bug", bug, run_async=True)
 
 dispatcher.add_handler(BUG_HANDLER)
 
-__mod_name__ = "Bug Report"
+__mod_name__ = "Bᴜɢ 🐞"
 
 __handlers__ = [
     BUG_HANDLER
