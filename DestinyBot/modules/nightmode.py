@@ -169,7 +169,7 @@ scheduler.add_job(job_open, trigger="cron", hour=5, minute=58)
 scheduler.start()
 
 
-__mod_name__ = "Night Mode"
+__mod_name__ = "Nɪɢʜᴛᴍᴏᴅᴇ 🌃"
 
 __help__ = """
 *Nightmode*
