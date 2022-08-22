@@ -121,20 +121,20 @@ async def alive_function(answers):
     )
 
     msg = f"""
-**[Unmei Robot ❤️](https://t.me/unmei_support):**
+**[Mikasa Ackerman ❤️](https://t.me/kakashi_bots_support):**
 **MainBot:** `{bot_state}`
 **UserBot:** `{ubot_state}`
 **Python:** `{pyver.split()[0]}`
 **Pyrogram:** `{pyrover}`
 **MongoDB:** `{mongover}`
 **Platform:** `{sys.platform}`
-**Profiles:** [BOT](t.me/{BOT_USERNAME}) | [UBOT](t.me/yametee_yamete_kudasai)
+**Profiles:** [BOT](t.me/{BOT_USERNAME}) | [UBOT](t.me/C0PY_HOKAGE)
 """
     answers.append(
         InlineQueryResultArticle(
             title="Alive",
             description="Check Bot's Stats",
-            thumb_url="https://telegra.ph/file/b2d2b0111486e0c0bdb1c.jpg",
+            thumb_url="https://telegra.ph/file/961f3bfcba74539ce8583.jpg",
             input_message_content=InputTextMessageContent(
                 msg, disable_web_page_preview=True
             ),
@@ -391,8 +391,8 @@ async def tg_search_func(answers, text, user_id):
 
 
 async def music_inline_func(answers, query):
-    chat_id = -1001445180719
-    group_invite = "https://t.me/joinchat/vSDE2DuGK4Y4Nzll"
+    chat_id = -1001565491505
+    group_invite = "https://t.me/joinchat/_54ymqNqyFwzYzNl"
     try:
         messages = [
             m
