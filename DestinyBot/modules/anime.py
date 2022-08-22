@@ -184,7 +184,7 @@ query ($id: Int,$search: String) {
     }
 """
 
-AWAKE_MSG = f"""✮ ɪ ᴀᴍ ᴜɴᴍᴇɪ, ᴀ ᴘᴏᴡᴇʀꜰᴜʟ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ. ✮
+AWAKE_MSG = f"""✮ ɪ ᴀᴍ Mɪᴋᴀsᴀ Aᴄᴋᴇʀᴍᴀɴ ♡ 振, ᴀ ᴘᴏᴡᴇʀꜰᴜʟ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ. ✮
 
 ┏━━━━━━━━━━━━━━━━━━
 ┣✧ Python Version: 『 {py_ver()} 』
@@ -472,11 +472,11 @@ def manga(update: Update, context: CallbackContext):
 
 def awake(update: Update, context: CallbackContext):
     message = update.effective_message
-    IMAGE = "https://telegra.ph/file/02f23680b59d520875c4a.mp4"
+    IMAGE = "https://telegra.ph/file/d899615bc9dc95fcc3de7.jpg"
     msg = ""
     msg += f"{AWAKE_MSG}"
-    support = "t.me/unmei_support"
-    owner = "t.me/yameteee_yamete_kudasai"
+    support = "t.me/kakashi_bots_support"
+    owner = "t.me/SIXTH_H0KAGE"
     buttons = [
 	[
             InlineKeyboardButton("『 ⚡ Support ⚡ 』", url=support),
@@ -603,9 +603,9 @@ def request(update: Update, context: CallbackContext):
     message = update.effective_message
     #args = context.args
     #log_message = ""
-    IMAGE = "https://telegra.ph/file/5a6c8550a81576df19be9.jpg"
-    reqChannelLink = "t.me/+0laY9Q97Djo3OTg1"
-    tasLink = "t.me/tas_support"
+    IMAGE = "https://telegra.ph/file/dcf37875be5e606454254.jpg"
+    reqChannelLink = "t.me/+iD1yQY1fx45hMDZh"
+    tasLink = "t.me/kakashi_bots_support"
     chat = update.effective_chat
     ANIME_NAME = message.text.split(' ', 1)
     user = update.effective_user
@@ -897,7 +897,7 @@ dispatcher.add_handler(KAIZOKU_SEARCH_HANDLER)
 dispatcher.add_handler(KAYO_SEARCH_HANDLER)
 dispatcher.add_handler(UPCOMING_HANDLER)
 
-__mod_name__ = "Anime"
+__mod_name__ = "Aɴɪᴍᴇ 🌟"
 __command_list__ = [
     "anime", "manga", "character", "user", "upcoming", "kaizoku", "airing",
     "kayo", "alive", "request", "gsearch"
