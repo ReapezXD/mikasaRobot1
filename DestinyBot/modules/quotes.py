@@ -374,18 +374,64 @@ async def replied_user(draw, tot, text, maxlength, title):
                 draw.text((180 + space, 132), letter, font=textfont, fill="white")
                 space += textfont.getsize(letter)[0]
                 
-@unmeibot(pattern="^/q")
-async def _(event):
-    if event.fwd_from:
-        return
+@unmeibot(pattern="^/q(?: |$)(.*)")
+async def quott_(event):
+    match = event.pattern_match.group(1).strip()
+    if not event.is_reply:
+        return await event.eor("Please reply to a message")
+    msg = await event.reply("Creating quote plaese wait")
     reply = await event.get_reply_message()
-    repliedreply = await reply.get_reply_message()
-    user = (
-        await event.client.get_entity(reply.forward.sender) if reply.fwd_from
-        else reply.sender)
-    res, canvas = await process(msg, user, event.client, reply, repliedreply)
-    if not res:
-        return
-    canvas.save('sticker.webp')
-    await event.client.send_file(event.chat_id, "sticker.webp", reply_to=event.reply_to_msg_id)
-    os.remove('sticker.webp')
+    replied_to, reply_ = None, None
+    if match:
+        spli_ = match.split(maxsplit=1)
+        if (spli_[0] in ["r", "reply"]) or (
+            spli_[0].isdigit() and int(spli_[0]) in range(1, 21)
+        ):
+            if spli_[0].isdigit():
+                if not event.client._bot:
+                    reply_ = await event.client.get_messages(
+                        event.chat_id,
+                        min_id=event.reply_to_msg_id - 1,
+                        reverse=True,
+                        limit=int(spli_[0]),
+                    )
+                else:
+                    id_ = reply.id
+                    reply_ = []
+                    for msg_ in range(id_, id_ + int(spli_[0])):
+                        msh = await event.client.get_messages(event.chat_id, ids=msg_)
+                        if msh:
+                            reply_.append(msh)
+            else:
+                replied_to = await reply.get_reply_message()
+            try:
+                match = spli_[1]
+            except IndexError:
+                match = None
+    user = None
+    if not reply_:
+        reply_ = reply
+    if match:
+        match = match.split(maxsplit=1)
+    if match:
+        if match[0].startswith("@") or match[0].isdigit():
+            try:
+                match_ = await event.client.parse_id(match[0])
+                user = await event.client.get_entity(match_)
+            except ValueError:
+                pass
+            match = match[1] if len(match) == 2 else None
+        else:
+            match = match[0]
+    if match == "random":
+        match = choice(all_col)
+    try:
+        file = await quotly.create_quotly(
+            reply_, bg=match, reply=replied_to, sender=user
+        )
+    except Exception as er:
+        return await msg.edit(str(er))
+    message = await reply.reply("", file=file)
+    os.remove(file)
+    await msg.delete()
+    return message
