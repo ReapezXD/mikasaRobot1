@@ -8,11 +8,11 @@ from telegram.ext import CallbackContext, CallbackQueryHandler
 
 def bug(update: Update, context: CallbackContext):
     message = update.effective_message
-    IMAGE = "https://telegra.ph/file/0ec3d2fadf05511e819c1.jpg"
+    IMAGE = "https://telegra.ph/file/6f62ff12a746dd9eee9ee.jpg"
     #args = context.args
     #log_message = ""
-    bugChannelLink = "t.me/+Q3UyHDVMVUdhY2Fl"
-    supportLink = "t.me/unmei_support"
+    bugChannelLink = "t.me/+_ZBe_TDUGsE2MDU1"
+    supportLink = "t.me/kakashi_bots_support"
     chat = update.effective_chat
     BUG_DETAILS = message.text.split(' ', 1)
     user = update.effective_user
@@ -52,7 +52,7 @@ def bug(update: Update, context: CallbackContext):
         update.effective_message.reply_text("Bruh, this will work like `/bug <report about a bug>`, don't comedy me..")
 __help__ = """
 ✮ /bug <report text>*:* Sends a report text mentioned by user directly to
-Unmei Support's private channel.
+Mikasa Support's private channel.
 
 *NOTE:* it will also collect user's information, specially their Telegram ID.
 So, think twice before spamming this command without any reason.
