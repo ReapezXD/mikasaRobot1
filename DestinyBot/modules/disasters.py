@@ -73,20 +73,20 @@ def adddev(update: Update, context: CallbackContext) -> str:
         data = json.load(infile)
 
     if int(user_id) in DEV_USERS:
-        message.reply_text("This member is already a Conductor")
+        message.reply_text("This member is already a FOUNDING TITAN")
 
     if user_id in DRAGONS:
-        rt += "Requested to promote a Musicart to a Conductor."
+        rt += "Requested to promote a COLOSSAL to a FOUNDING TITAN."
         data['sudos'].remove(user_id)
         DRAGONS.remove(user_id)
 
     if user_id in DEMONS:
-        rt += "Requested to promote a D2 Slayer to a Conductor."
+        rt += "Requested to promote a ACKERMAN to a FOUNDING TITAN."
         data['supports'].remove(user_id)
         DEMONS.remove(user_id)
 
     if user_id in WOLVES:
-        rt += "Requested to promote a Melody Creator to a Conductor."
+        rt += "Requested to promote a PURE TITAN to a FOUNDING TITAN."
         data['whitelists'].remove(user_id)
         WOLVES.remove(user_id)
 
@@ -133,16 +133,16 @@ def addsudo(update: Update, context: CallbackContext) -> str:
         data = json.load(infile)
 
     if user_id in DRAGONS:
-        message.reply_text("This member is already a Musicart")
+        message.reply_text("This member is already a COLOSSAL TITAN")
         return ""
 
     if user_id in DEMONS:
-        rt += "Requested to promote a D2 Slayer to Musicart."
+        rt += "Requested to promote a ACKERMAN to COLOSSAL TITAN."
         data['supports'].remove(user_id)
         DEMONS.remove(user_id)
 
     if user_id in WOLVES:
-        rt += "Requested to promote a Melody Creator to Musicart."
+        rt += "Requested to promote a PURE TITAN to COLOSSAL TITAN."
         data['whitelists'].remove(user_id)
         WOLVES.remove(user_id)
 
@@ -153,7 +153,7 @@ def addsudo(update: Update, context: CallbackContext) -> str:
         json.dump(data, outfile, indent=4)
 
     update.effective_message.reply_text(
-        rt + "\nSuccessfully set Disaster level of {} to Musicart!".format(
+        rt + "\nSuccessfully set Disaster level of {} to COLOSSAL TITAN!".format(
             user_member.first_name))
 
     log_message = (
@@ -192,16 +192,16 @@ def addsupport(
         data = json.load(infile)
 
     if user_id in DRAGONS:
-        rt += "Requested to demote this Musicart to D2 Slayer"
+        rt += "Requested to demote this COLOSSAL TITAN to ACKERMAN"
         data['sudos'].remove(user_id)
         DRAGONS.remove(user_id)
 
     if user_id in DEMONS:
-        message.reply_text("This user is already a D2 Slayer.")
+        message.reply_text("This user is already a ACKERMAN.")
         return ""
 
     if user_id in WOLVES:
-        rt += "Requested to Promote this Melody Creator to D2 Slayer"
+        rt += "Requested to Promote this PURE TITAN to ACKERMAN"
         data['whitelists'].remove(user_id)
         WOLVES.remove(user_id)
 
@@ -212,7 +212,7 @@ def addsupport(
         json.dump(data, outfile, indent=4)
 
     update.effective_message.reply_text(
-        rt + f"\n{user_member.first_name} was added as a D2 Slayer!")
+        rt + f"\n{user_member.first_name} was added as a ACKERMAN!")
 
     log_message = (
         f"#SUPPORT\n"
@@ -247,17 +247,17 @@ def addwhitelist(update: Update, context: CallbackContext) -> str:
         data = json.load(infile)
 
     if user_id in DRAGONS:
-        rt += "This member is a Musicart, Demoting to Melody Creator."
+        rt += "This member is a COLOSSAL TITAN, Demoting to PURE TITAN."
         data['sudos'].remove(user_id)
         DRAGONS.remove(user_id)
 
     if user_id in DEMONS:
-        rt += "This user is D2 Slayer, Demoting to Melody Creator."
+        rt += "This user is ACKERMAN, Demoting to PURE TITAN."
         data['supports'].remove(user_id)
         DEMONS.remove(user_id)
 
     if user_id in WOLVES:
-        message.reply_text("This user is already a Melody Creator.")
+        message.reply_text("This user is already a PURE TITAN.")
         return ""
 
     data['whitelists'].append(user_id)
@@ -268,7 +268,7 @@ def addwhitelist(update: Update, context: CallbackContext) -> str:
 
     update.effective_message.reply_text(
         rt +
-        f"\nSuccessfully promoted {user_member.first_name} to a Melody Creator!")
+        f"\nSuccessfully promoted {user_member.first_name} to a PURE TITAN!")
 
     log_message = (
         f"#WHITELIST\n"
@@ -303,22 +303,22 @@ def addtiger(update: Update, context: CallbackContext) -> str:
         data = json.load(infile)
 
     if user_id in DRAGONS:
-        rt += "This member is a Musicart, Demoting to Defender."
+        rt += "This member is a COLOSSAL TITAN, Demoting to SURVEY CORP."
         data['sudos'].remove(user_id)
         DRAGONS.remove(user_id)
 
     if user_id in DEMONS:
-        rt += "This user is a D2 Slayer, Demoting to Defender."
+        rt += "This user is a ACKERMAN, Demoting to SURVEY CORP."
         data['supports'].remove(user_id)
         DEMONS.remove(user_id)
 
     if user_id in WOLVES:
-        rt += "This user is a Melody Creator, Demoting to Defender."
+        rt += "This user is a PURE TITAN, Demoting to SURVEY CORP."
         data['whitelists'].remove(user_id)
         WOLVES.remove(user_id)
 
     if user_id in TIGERS:
-        message.reply_text("This user is already a Defender.")
+        message.reply_text("This user is already a SURVEY CORP.")
         return ""
 
     data['tigers'].append(user_id)
