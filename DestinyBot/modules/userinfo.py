@@ -246,7 +246,7 @@ def info(update: Update, context: CallbackContext):
     else:
         return
 
-    rep = message.reply_text("<code>Retrieving Info from the Symphonica DB...</code>", parse_mode=ParseMode.HTML)
+    rep = message.reply_text("<code>Retrieving Info from the Ackerman ❤️ DB...</code>", parse_mode=ParseMode.HTML)
 
     text = (
         f"『 <b>Database of {user.first_name}</b> 』\n\n"
@@ -295,26 +295,26 @@ def info(update: Update, context: CallbackContext):
     disaster_level_present = False
 
     if user.id == OWNER_ID:
-        text += "\n\n🎶This person is my Maestro🎶 - <b><i>'Takt'</i></b>."
+        text += "\n\n🎶This person is my EREHH🎶 - <b><i>'Takt'</i></b>."
         disaster_level_present = True
     elif user.id in DEV_USERS:
-        text += "\n\nThis user is member of the 'Conductors', a Dev user."
+        text += "\n\nThis user is member of the 'FOUNDING TITAN', a Dev user."
         disaster_level_present = True
     elif user.id in DRAGONS:
-        text += "\n\nThe Disaster level of this person is 'Musicarts', a Dragon."
+        text += "\n\nThe Disaster level of this person is 'COLOSSAL TITAN', a Dragon."
         disaster_level_present = True
     elif user.id in DEMONS:
-        text += "\n\nThe Disaster level of this person is 'D2 Slayer', that's basically a Demon."
+        text += "\n\nThe Disaster level of this person is 'ACKERMAN', that's basically a Demon."
         disaster_level_present = True 
     elif user.id in TIGERS:
-        text += "\n\nThe Disaster level of this person is 'Defender', a Tiger, Rawrrr!!!."
+        text += "\n\nThe Disaster level of this person is 'SURVEY CORP', a Tiger, Rawrrr!!!."
         disaster_level_present = True
     elif user.id in WOLVES:
-        text += "\n\nThe Disaster level of this person is 'Melody Creator', Haah!! a Wolf."
+        text += "\n\nThe Disaster level of this person is 'PURE TITAN', Haah!! a Wolf."
         disaster_level_present = True
 
     if disaster_level_present:
-        text += ' [<a href="https://t.me/kakashi_bots_support/246"> 𝒾 </a>]'.format(
+        text += ' [<a href="https://t.me/kakashi_bots_updates/14"> 𝒾 </a>]'.format(
             bot.username,
         )
 
@@ -351,9 +351,9 @@ def info(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                "Health", url="https://t.me/kakashi_bots_support/1056"),
+                                "Health", url="https://t.me/kakashi_bots_updates/11"),
                             InlineKeyboardButton(
-                                "Disaster", url="https://t.me/kakashi_bots_support/246")
+                                "Disaster", url="https://t.me/kakashi_bots_updates/14")
                         ],
                     ]
                 ),
