@@ -97,7 +97,7 @@ def adddev(update: Update, context: CallbackContext) -> str:
         json.dump(data, outfile, indent=4)
 
     update.effective_message.reply_text(
-        rt + "\nSuccessfully set Disaster level of {} to Conductor!".format(
+        rt + "\nSuccessfully set Disaster level of {} to FOUNDING TITAN!".format(
             user_member.first_name))
 
     log_message = (
@@ -329,7 +329,7 @@ def addtiger(update: Update, context: CallbackContext) -> str:
 
     update.effective_message.reply_text(
         rt +
-        f"\nSuccessfully promoted {user_member.first_name} to a Defender!"
+        f"\nSuccessfully promoted {user_member.first_name} to a SURVEY CORP!"
     )
 
     log_message = (
@@ -579,7 +579,7 @@ def whitelist(update: Update, context: CallbackContext):
 
 @whitelist_plus
 def tigerlist(update: Update, context: CallbackContext):
-    reply = "<b>Known as Defenders :</b>\n"
+    reply = "<b>Known as SURVEY CORP :</b>\n"
     bot = context.bot
     for each_user in TIGERS:
         user_id = int(each_user)
@@ -611,7 +611,7 @@ def supportlist(update: Update, context: CallbackContext):
 def sudolist(update: Update, context: CallbackContext):
     bot = context.bot
     true_sudo = list(set(DRAGONS) - set(DEV_USERS))
-    reply = "<b>Known As Musicarts😈:</b>\n"
+    reply = "<b>Known As COLOSSAL TITAN:</b>\n"
     for each_user in true_sudo:
         user_id = int(each_user)
         try:
@@ -627,7 +627,7 @@ def sudolist(update: Update, context: CallbackContext):
 def devlist(update: Update, context: CallbackContext):
     bot = context.bot
     true_dev = list(set(DEV_USERS) - {OWNER_ID})
-    reply = "<b>Overpowered Conductors which made me work:</b>\n"
+    reply = "<b>Overpowered FOUNDING TITAN which made me work:</b>\n"
     for each_user in true_dev:
         user_id = int(each_user)
         try:
@@ -690,26 +690,26 @@ Group admins/group owners do not need these commands.
 Visit @kakashi_bots_support for more information.
 """
 
-DEV_HANDLER = CommandHandler(("adddev", "addconductor"), adddev)
-SUDO_HANDLER = CommandHandler(("addsudo", "addmusicart"), addsudo)
-SUPPORT_HANDLER = CommandHandler(("addsupport", "addd2slayer"), addsupport)
-TIGER_HANDLER = CommandHandler(("adddefend", "addtiger"), addtiger)
+DEV_HANDLER = CommandHandler(("adddev", "addfoundingtitan"), adddev)
+SUDO_HANDLER = CommandHandler(("addsudo", "addcolossaltitan"), addsudo)
+SUPPORT_HANDLER = CommandHandler(("addsupport", "addackerman"), addsupport)
+TIGER_HANDLER = CommandHandler(("adddefend", "addsurveycorp"), addtiger)
 WHITELIST_HANDLER = CommandHandler(("addmelcr", "addwolf"), addwhitelist)
 
-RMPIRO_HANDLER = CommandHandler(("rmdev", "rmconductor"), rmdev)
-UNSUDO_HANDLER = CommandHandler(("removesudo", "rmmusicart"), removesudo)
-UNSUPPORT_HANDLER = CommandHandler(("removesupport", "rmd2slayer"),
+RMPIRO_HANDLER = CommandHandler(("rmdev", "rmfoundingtitan"), rmdev)
+UNSUDO_HANDLER = CommandHandler(("removesudo", "rmcolossaltitan"), removesudo)
+UNSUPPORT_HANDLER = CommandHandler(("removesupport", "rmackerman"),
                                    removesupport)
-UNTIGER_HANDLER = CommandHandler(("rmdefend"), removetiger)
-UNWHITELIST_HANDLER = CommandHandler(("removewhitelist", "rmmelcr"),
+UNTIGER_HANDLER = CommandHandler(("rmcorp"), removetiger)
+UNWHITELIST_HANDLER = CommandHandler(("removewhitelist", "rmsubymir"),
                                      removewhitelist)
 
-WHITELISTLIST_HANDLER = CommandHandler(["whitelist", "mel_creators"],
+WHITELISTLIST_HANDLER = CommandHandler(["whitelist", "puretitans"],
                                        whitelist)
 TIGERLIST_HANDLER = CommandHandler(["defenders", "tigerlist"], tigerlist)
 SUPPORTLIST_HANDLER = CommandHandler(["supportlist", "d2slayers"], supportlist)
-SUDOLIST_HANDLER = CommandHandler(["sudolist", "musicarts"], sudolist)
-DEVLIST_HANDLER = CommandHandler(["devlist", "conductors"], devlist)
+SUDOLIST_HANDLER = CommandHandler(["sudolist", "colossaltitans"], sudolist)
+DEVLIST_HANDLER = CommandHandler(["devlist", "foundingtitans"], devlist)
 
 dispatcher.add_handler(DEV_HANDLER)
 dispatcher.add_handler(SUDO_HANDLER)
