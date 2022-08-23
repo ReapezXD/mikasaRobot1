@@ -366,7 +366,7 @@ def rmdev(update: Update, context: CallbackContext) -> str:
         data = json.load(infile)
 
     if user_id in DEV_USERS:
-        message.reply_text("Requested to demote this user to a Normal Human")
+        message.reply_text("Requested to demote this user to a SUBJECT OF YMIR")
         DEV_USERS.remove(user_id)
         data['devs'].remove(user_id)
 
@@ -386,7 +386,7 @@ def rmdev(update: Update, context: CallbackContext) -> str:
         return log_message
 
     else:
-        message.reply_text("This user is not a Conductor!")
+        message.reply_text("This user is not a FOUNDING TITAN!")
         return ""
 
 
@@ -410,7 +410,7 @@ def removesudo(update: Update, context: CallbackContext) -> str:
         data = json.load(infile)
 
     if user_id in DRAGONS:
-        message.reply_text("Requested to demote this user to a Normal Human")
+        message.reply_text("Requested to demote this user to a SUBJECT OF YMIR")
         DRAGONS.remove(user_id)
         data['sudos'].remove(user_id)
 
@@ -430,7 +430,7 @@ def removesudo(update: Update, context: CallbackContext) -> str:
         return log_message
 
     else:
-        message.reply_text("This user is not a Musicart!")
+        message.reply_text("This user is not a COLOSSAL TITAN!")
         return ""
 
 
@@ -454,7 +454,7 @@ def removesupport(update: Update, context: CallbackContext) -> str:
         data = json.load(infile)
 
     if user_id in DEMONS:
-        message.reply_text("Requested to demote this user to a Normal Human")
+        message.reply_text("Requested to demote this user to a SUBJECT OF YMIR")
         DEMONS.remove(user_id)
         data['supports'].remove(user_id)
 
@@ -473,7 +473,7 @@ def removesupport(update: Update, context: CallbackContext) -> str:
         return log_message
 
     else:
-        message.reply_text("This user is not a D2 Slayer!")
+        message.reply_text("This user is not a ACKERMAN!")
         return ""
 
 
@@ -497,7 +497,7 @@ def removewhitelist(update: Update, context: CallbackContext) -> str:
         data = json.load(infile)
 
     if user_id in WOLVES:
-        message.reply_text("Demoting to normal user")
+        message.reply_text("Demoting to SUBJECT OF YMIR")
         WOLVES.remove(user_id)
         data['whitelists'].remove(user_id)
 
@@ -515,7 +515,7 @@ def removewhitelist(update: Update, context: CallbackContext) -> str:
 
         return log_message
     else:
-        message.reply_text("This user is not a Melody Creator!")
+        message.reply_text("This user is not a PURE TITAN!")
         return ""
 
 
@@ -539,7 +539,7 @@ def removetiger(update: Update, context: CallbackContext) -> str:
         data = json.load(infile)
 
     if user_id in TIGERS:
-        message.reply_text("Demoting to normal user")
+        message.reply_text("Demoting to PURE TITAN")
         TIGERS.remove(user_id)
         data['tigers'].remove(user_id)
 
@@ -556,14 +556,14 @@ def removetiger(update: Update, context: CallbackContext) -> str:
 
         return log_message
     else:
-        message.reply_text("This user is not a Defender!")
+        message.reply_text("This user is not a SURVEY CORP!")
         return ""
 
 
 
 @whitelist_plus
 def whitelist(update: Update, context: CallbackContext):
-    reply = "<b>Known as Melody Creators 🐺:</b>\n"
+    reply = "<b>Known as PURE TITAN 🐺:</b>\n"
     bot = context.bot
     for each_user in WOLVES:
         user_id = int(each_user)
@@ -595,7 +595,7 @@ def tigerlist(update: Update, context: CallbackContext):
 @whitelist_plus
 def supportlist(update: Update, context: CallbackContext):
     bot = context.bot
-    reply = "<b>Known As D2 Slayers👹:</b>\n"
+    reply = "<b>Known As ACKERMAN 👹:</b>\n"
     for each_user in DEMONS:
         user_id = int(each_user)
         try:
@@ -644,15 +644,15 @@ Commands listed here only work for users with special
 access are mainly used for troubleshooting, debugging purposes.
 Group admins/group owners do not need these commands. 
  ╔ *List all special users:*
- ╠ ✮ `/musicarts` or `/sudolist`*:* Lists all Dragon disasters
- ╠ ✮ `/d2slayers` or `/supportlist`*:* Lists all Demon disasters
- ╠ ✮ `/defenders` or `/tigerlist`*:* Lists all Tigers disasters
- ╠ ✮ `/mel_creators` or `/whitelist`*:* Lists all Wolf disasters
- ╠ ✮ `/conductors` or `/devlist`*:* Lists all Dev disastors
- ╠ ✮ `/addmusicart` or `/addsudo`*:* Adds a user to Dragon
- ╠ ✮ `/addd2slayer` or `/addsupport`*:* Adds a user to Demon
- ╠ ✮ `/adddefender` or `/addtiger`*:* Adds a user to Tiger
- ╚ ✮ `/addmelcr` or `/addwolf`*:* Adds a user to Wolf 
+ ╠ ✮ `/COLOSSAL_TITAN` or `/sudolist`*:* Lists all Dragon disasters
+ ╠ ✮ `/ACKERMAN` or `/supportlist`*:* Lists all Demon disasters
+ ╠ ✮ `/SURVEY_CORP` or `/tigerlist`*:* Lists all Tigers disasters
+ ╠ ✮ `/PURE_TITAN` or `/whitelist`*:* Lists all Wolf disasters
+ ╠ ✮ `/FOUNDING_TITAN` or `/devlist`*:* Lists all Dev disastors
+ ╠ ✮ `/addcolossaltian` or `/addsudo`*:* Adds a user to Dragon
+ ╠ ✮ `/addackerman` or `/addsupport`*:* Adds a user to Demon
+ ╠ ✮ `/addsuvercorp` or `/addtiger`*:* Adds a user to Tiger
+ ╚ ✮ `/addpuretitan` or `/addwolf`*:* Adds a user to Wolf 
  ╔ *Ping:*
  ╠ ✮ `/ping`*:* gets ping time of bot to telegram server
  ╚ ✮ `/pingall`*:* gets all listed ping times
