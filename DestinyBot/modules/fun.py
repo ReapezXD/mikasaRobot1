@@ -7,7 +7,7 @@ from DestinyBot import dispatcher
 from DestinyBot.modules.disable import DisableAbleCommandHandler
 from DestinyBot.modules.helper_funcs.chat_status import is_user_admin
 from DestinyBot.modules.helper_funcs.extraction import extract_user
-from telegram import ChatPermissions, ParseMode, Update
+from telegram import (InlineKeyboardButton, InlineKeyboardMarkup, ChatPermissions, ParseMode, Update)
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext
 
@@ -18,6 +18,38 @@ GIF_ID = [
     "CgACAgQAAx0CXiWt4wACjE5iEKq7AtYlCaDGgoP5VR7s7sZZ7gACFgMAAq3GzFJXsgPyMtGIEyME",
     "CgACAgQAAx0CXiWt4wACjE9iEKrBCDgQng6sVbqmU-LxGkFbsQAC3AIAAiudtFIUgy45-_1c2iME"
 ]
+
+henbuttons = [
+    [
+                        InlineKeyboardButton(
+                             text="Uncensored Hentai",
+                             url="https://t.me/Uncensored_Hemtai"),
+                    ],                
+                   [ 
+                       InlineKeyboardButton(
+                             text="Pornhwa",
+                             url="https://t.me/PornhwaHeaven"),                  
+                       InlineKeyboardButton(
+                             text="Chat",
+                             url="https://t.me/Hentai_Chat_Hanime"),
+                   ],
+    ]
+
+anibuttons = [
+    [
+                        InlineKeyboardButton(
+                             text="Anime Cruise",
+                             url="https://t.me/Anime_Cruise"),
+                    ],                
+                   [ 
+                       InlineKeyboardButton(
+                             text="Index",
+                             url="https://t.me/Cruise_Index"),                  
+                       InlineKeyboardButton(
+                             text="Chat",
+                             url="https://t.me/Anime_Chat_Kaizuryu"),
+                   ],
+    ]
 
 
 BOT_FLIRTED = (
@@ -414,6 +446,8 @@ __help__ = """
 ✮ /blue <text>: bluify your text!
 ✮ /latin <text>: latinify your text!
 ✮ /lined <text>: lined your text!
+✮ /hemtai : join hematai channel!
+✮ /animec :  join anime channel!
 """
 
 SIGMA_HANDLER = DisableAbleCommandHandler("sigma", sigma, run_async=True)
@@ -433,6 +467,8 @@ EIGHTBALL_HANDLER = DisableAbleCommandHandler("8ball", eightball, run_async=True
 TABLE_HANDLER = DisableAbleCommandHandler("table", table, run_async=True)
 SHOUT_HANDLER = DisableAbleCommandHandler("shout", shout, run_async=True)
 WEEBIFY_HANDLER = DisableAbleCommandHandler("weebify", weebify, run_async=True)
+ANIMEC_HANDLER = DisableAbleCommandHandler("animec", animec)
+HEMTAI_HANDLER = DisableAbleCommandHandler("hemtai", hemtai)
 
 dispatcher.add_handler(SIGMA_HANDLER)
 dispatcher.add_handler(ANIFLIRT_HANDLER)
@@ -451,6 +487,8 @@ dispatcher.add_handler(RLG_HANDLER)
 dispatcher.add_handler(DECIDE_HANDLER)
 dispatcher.add_handler(EIGHTBALL_HANDLER)
 dispatcher.add_handler(TABLE_HANDLER)
+dispatcher.add_handler(HEMTAI_HANDLER)
+dispatcher.add_handler(ANIMEC_HANDLER)
 
 __mod_name__ = "Fᴜɴ 🕺"
 __command_list__ = [
@@ -471,6 +509,8 @@ __command_list__ = [
     "aniflirt",
     "sex",
     "sigma",
+    "hemtai",
+    "animec",
 ]
 __handlers__ = [
     SIGMA_HANDLER,
@@ -490,4 +530,6 @@ __handlers__ = [
     WEEBIFY_HANDLER,
     EIGHTBALL_HANDLER,
     SEMX_HANDLER,
+    HEMTAI_HANDLER,
+    ANIMEC_HANDLER,
 ]
