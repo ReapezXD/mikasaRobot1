@@ -644,11 +644,11 @@ Commands listed here only work for users with special
 access are mainly used for troubleshooting, debugging purposes.
 Group admins/group owners do not need these commands. 
  ╔ *List all special users:*
- ╠ ✮ `/COLOSSAL_TITAN` or `/sudolist`*:* Lists all Dragon disasters
- ╠ ✮ `/ACKERMAN` or `/supportlist`*:* Lists all Demon disasters
- ╠ ✮ `/SURVEY_CORP` or `/tigerlist`*:* Lists all Tigers disasters
- ╠ ✮ `/PURE_TITAN` or `/whitelist`*:* Lists all Wolf disasters
- ╠ ✮ `/FOUNDING_TITAN` or `/devlist`*:* Lists all Dev disastors
+ ╠ ✮ `/COLOSSALTITANS` or `/sudolist`*:* Lists all Dragon disasters
+ ╠ ✮ `/ACKERMANS` or `/supportlist`*:* Lists all Demon disasters
+ ╠ ✮ `/SURVEYCORPS` or `/tigerlist`*:* Lists all Tigers disasters
+ ╠ ✮ `/PURETITANS` or `/whitelist`*:* Lists all Wolf disasters
+ ╠ ✮ `/FOUNDINGTITANS` or `/devlist`*:* Lists all Dev disastors
  ╠ ✮ `/addcolossaltian` or `/addsudo`*:* Adds a user to Dragon
  ╠ ✮ `/addackerman` or `/addsupport`*:* Adds a user to Demon
  ╠ ✮ `/addsuvercorp` or `/addtiger`*:* Adds a user to Tiger
@@ -707,7 +707,7 @@ UNWHITELIST_HANDLER = CommandHandler(("removewhitelist", "rmsubymir"),
 WHITELISTLIST_HANDLER = CommandHandler(["whitelist", "puretitans"],
                                        whitelist)
 TIGERLIST_HANDLER = CommandHandler(["defenders", "tigerlist"], tigerlist)
-SUPPORTLIST_HANDLER = CommandHandler(["supportlist", "d2slayers"], supportlist)
+SUPPORTLIST_HANDLER = CommandHandler(["supportlist", "ackermans"], supportlist)
 SUDOLIST_HANDLER = CommandHandler(["sudolist", "colossaltitans"], sudolist)
 DEVLIST_HANDLER = CommandHandler(["devlist", "foundingtitans"], devlist)
 
