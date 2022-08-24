@@ -124,8 +124,8 @@ buttons = [
         InlineKeyboardButton(text="『 ᴍʏ ᴇʀᴇʜ! 』", url="https://t.me/SIXTH_H0KAGE")
     ],
     [
-        InlineKeyboardButton(text="『 🚑 sᴜᴘᴘᴏʀᴛ 』",url="https://telegram.dog/kakashi_bots_updates"),
-        InlineKeyboardButton(text="『 📢 ᴜᴘᴅᴀᴛᴇs 』",url="https://t.me/kakashi_bots_support")
+        InlineKeyboardButton(text="『 🚑 sᴜᴘᴘᴏʀᴛ 』",url="https://telegram.dog/kakashi_bots_support"),
+        InlineKeyboardButton(text="『 📢 ᴜᴘᴅᴀᴛᴇs 』",url="https://t.me/kakashi_bots_updates")
     ]
 ]
 
