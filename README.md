@@ -1,7 +1,7 @@
 
-# Destiny Robot
+# Mɪᴋᴀsᴀ Aᴄᴋᴇʀᴍᴀɴ ♡ 振
 ![Mikasa (AOT)](https://telegra.ph/file/9c828400be28ee5caca83.jpg)
-# Unmei Destiny
+# Mɪᴋᴀsᴀ Aᴄᴋᴇʀᴍᴀɴ ♡ 振
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/729d680436084e0a9cb16f0e875dc097)](https://www.codacy.com/gh/DarkSoulxUltra/DestinyBot/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=DarkSoulxUltra/DestinyBot&amp;utm_campaign=Badge_Grade_Settings)[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/DarkSoulxUltra/DestinyBot/graphs/commit-activity) [![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://perso.crans.org/besson/LICENSE.html) [![Open Source Love svg2](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://makeapullrequest.com) [![Updates channel!](https://img.shields.io/badge/Join%20Channel-!-red)](https://t.me/unmei_updates)
 
 It is a Telegram group management bot running on python3 with a sqlalchemy database and the theme persona to make Unmei is suitable for Anime and Manga group chats.
