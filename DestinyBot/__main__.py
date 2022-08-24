@@ -87,7 +87,7 @@ PM_START_TEXT = """
 ───『 {} 』───
 Hey there *✮ {} ✮*,
 
-*Watashi No Namae Wa* "`Mɪᴋᴀsᴀ Aᴄᴋᴇʀᴍᴀɴ ♡ 振`"*, ɪ'ᴍ ғʀᴏᴍ ᴀᴛᴛᴀᴄᴋ ᴏɴ ᴛɪᴛᴀɴ*[.](https://telegra.ph/file/4c56f745cb3d5765a4aaf.mp4)*ɪ ᴀᴍ ʜᴇʀᴇ ᴛᴏ ᴘʀᴏᴛᴇᴄᴛ ʏᴏu ᴍʏ ᴇʀᴇʜʜ!*
+*Watashi No Namae Wa* "`Mɪᴋᴀsᴀ Aᴄᴋᴇʀᴍᴀɴ ♡ 振`"*, ɪ'ᴍ ғʀᴏᴍ ᴀᴛᴛᴀᴄᴋ ᴏɴ ᴛɪᴛᴀɴ*[.](https://telegra.ph/file/0ea89149a9d236d42bc4d.mp4)*ɪ ᴀᴍ ʜᴇʀᴇ ᴛᴏ ᴘʀᴏᴛᴇᴄᴛ ʏᴏu ᴍʏ ᴇʀᴇʜʜ!*
 
 ➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳
 ღღ   *Uptime*: 『 `{}` 』   ღღ
