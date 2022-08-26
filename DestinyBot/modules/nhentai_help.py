@@ -7,5 +7,5 @@ __help__ = """
 
 Note:
 1. This will only work if you are in nsfw mode either in group or in private chat. do /addnsfw to enable nsfw mode before using it.
-2. If you need doujin codes, you can visit [Just Doujins](https://t.me/doujin_codes).
+2. If you need doujin codes, you can visit [HENTAI CHAT](https://t.me/+GJ15cVWwzm4xNDdh).
 """
